@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+ <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,11 +10,12 @@
     <ImageView
         android:id="@+id/iv_waves"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="190dp"
         android:scaleType="centerCrop"
         android:src="@drawable/wave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="ContentDescription" />
 
@@ -28,13 +29,14 @@
 
         <TextView
             android:id="@+id/tv_hai_binarian"
-            style="@style/TextAppearance.Material3.TitleMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
             android:layout_marginTop="3dp"
+            android:fontFamily="@font/meira"
             android:text="@string/text_hai"
             android:textColor="@color/black"
+            android:textSize="14dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,8 +45,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
+            android:fontFamily="@font/louries"
             android:text="@string/text_maumakan"
             android:textColor="@color/black"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_hai_binarian" />
 
@@ -52,7 +56,7 @@
             android:id="@+id/iv_cart_icon"
             android:layout_width="27dp"
             android:layout_height="32dp"
-            android:layout_marginStart="180dp"
+            android:layout_marginStart="190dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical"
             app:layout_constraintStart_toEndOf="@id/tv_hai_binarian"
@@ -64,7 +68,7 @@
             android:id="@+id/iv_profile_icon"
             android:layout_width="30dp"
             android:layout_height="33dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical"
             app:layout_constraintStart_toEndOf="@id/iv_cart_icon"
@@ -121,7 +125,8 @@
                 app:layout_constraintTop_toTopOf="@id/iv_discount" />
 
             <TextView
-                style="@style/TextAppearance.Material3.BodySmall"
+                style="@style/TextAppearance.Material3.BodyMedium"
+
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
@@ -131,6 +136,7 @@
                 android:text="@string/text_pesan_makanan"
                 android:textColor="@color/white"
                 android:textSize="10dp"
+                android:textStyle="italic"
                 app:layout_constraintStart_toEndOf="@id/iv_discount"
                 app:layout_constraintTop_toBottomOf="@id/tv_discount" />
 
@@ -181,12 +187,12 @@
                     android:src="@drawable/menu3" />
 
                 <TextView
-                    style="@style/TextAppearance.Material3.TitleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_marginTop="4dp"
                     android:ellipsize="end"
+                    android:fontFamily="@font/rosamby"
                     android:maxLines="2"
                     android:text="@string/text_menu_atas_1"
                     android:textAlignment="center"
@@ -212,12 +218,12 @@
                     android:src="@drawable/menu2" />
 
                 <TextView
-                    style="@style/TextAppearance.Material3.TitleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_marginTop="4dp"
                     android:ellipsize="end"
+                    android:fontFamily="@font/rosamby"
                     android:maxLines="2"
                     android:text="@string/text_menu_2"
                     android:textAlignment="center"
@@ -242,12 +248,12 @@
                     android:src="@drawable/menu4" />
 
                 <TextView
-                    style="@style/TextAppearance.Material3.TitleSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_marginTop="4dp"
                     android:ellipsize="end"
+                    android:fontFamily="@font/rosamby"
                     android:maxLines="2"
                     android:text="@string/text_menu_3"
                     android:textAlignment="center"
@@ -272,12 +278,12 @@
                     android:src="@drawable/menu1" />
 
                 <TextView
-                    style="@style/TextAppearance.Material3.TitleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_marginTop="4dp"
                     android:ellipsize="end"
+                    android:fontFamily="@font/rosamby"
                     android:maxLines="2"
                     android:text="@string/text_menu_4"
                     android:textAlignment="center"
@@ -291,7 +297,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="50dp"
         android:layout_marginTop="36dp"
@@ -300,11 +306,13 @@
 
         <TextView
             android:id="@+id/tv_bottom_menu1"
-            style="@style/TextAppearance.Material3.TitleMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:fontFamily="@font/bolda"
             android:text="@string/tv_list_menu_bawah"
+            android:textAlignment="center"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
@@ -324,7 +332,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="20dp"
-            android:src="@drawable/rice"
+            android:src="@drawable/noodle"
             app:layout_constraintEnd_toEndOf="@id/bottom_menu"
             app:layout_constraintStart_toEndOf="@id/iv_menu_bawah1"
             app:layout_constraintTop_toBottomOf="@id/tv_bottom_menu1"
@@ -335,23 +343,41 @@
             android:id="@+id/menudiskon1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/harvestbailey"
             android:text="@string/tv_menu_bawah1"
             android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/iv_menu_bawah1"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp" />
+            tools:layout_editor_absoluteX="27dp" />
 
         <TextView
             android:id="@+id/menudiskon2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:text="@string/tv_menu_bawah1"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/harvestbailey"
+            android:text="@string/tv_menu_diskon2"
             android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/bottom_menu"
             app:layout_constraintStart_toEndOf="@id/menudiskon1"
             app:layout_constraintTop_toBottomOf="@id/iv_menu_bawah2" />
 
+        <TextView
+            android:id="@+id/price_menudiskon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="@id/menudiskon1"
+            app:layout_constraintStart_toStartOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
